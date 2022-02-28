@@ -37,7 +37,8 @@ public class PeopleSave : MonoBehaviour
             {
                 if (Mathf.Abs(People[i].transform.position.x - x) < leeWay)
                 {
-                    People[i].transform.position = new Vector3(Random.Range(-1.6f,-0.5f), People[i].transform.position.y);
+                    People[i].transform.position = new Vector3(Random.Range(-10.6f,-0.5f)- 10, People[i].transform.position.y);
+                    PeopleSaved++;
                 }
             }
         }
